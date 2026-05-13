@@ -1,14 +1,3 @@
-# ================================================================
-# security-scan.yml — Reusable Workflow Consumer
-#
-# Demonstrates portability of the shift-left security pipeline.
-# This project calls the reusable workflow defined in the thesis
-# repository without copying any tool configuration.
-#
-# Any Python project can adopt shift-left security scanning
-# by adding this single workflow file.
-# ================================================================
-
 name: Security Scan (via Reusable Workflow)
 
 on:
@@ -19,6 +8,8 @@ on:
 permissions:
   security-events: write
   contents: read
+  pages: write
+  id-token: write
 
 jobs:
   security:
