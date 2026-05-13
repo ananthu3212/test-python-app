@@ -19,4 +19,4 @@ jobs:
       docker-image-name: test-python-app
       semgrep-config: p/python
       trivy-severity: HIGH,CRITICAL
-      fail-on-findings: false
+      fail-on-findings: true
