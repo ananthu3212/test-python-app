@@ -18,6 +18,6 @@ jobs:
     with:
       docker-image-name: test-python-app
       semgrep-config: p/python
-      enable-flask-rules: false
+      enable-flask-rules: true
       trivy-severity: HIGH,CRITICAL
       fail-on-findings: true
