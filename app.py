@@ -20,7 +20,7 @@ def unsafe_redirect():
     # Open Redirect — redirect destination taken directly from request
     # parameter without validation. An attacker can redirect users to
     # a malicious external site after visiting a trusted URL.
-    # Detected by: Semgrep custom flask-open-redirect rule (CWE-601)
+    # Detected by: Semgrep custom flask-open-redirect rule (CWE-601)h
     url = request.args.get('url')
     return redirect(url)
 
